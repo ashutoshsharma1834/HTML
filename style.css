@@ -1,0 +1,29 @@
+.name{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    width: 500px;
+    height: 500px;
+    background-color: aliceblue;
+}
+.p1{
+    width: 500px;
+    height: 250px;
+    background-color: blue;
+}
+.p2{
+    width: 500px;
+    height: 250px;
+    background-color: brown;
+}
+.c1{
+    width: 250px;
+    height: 250px;
+    background-color: yellow;
+    float: right;
+}
+.c2{
+    width: 250px;
+    height: 250px;
+    background-color: teal;
+    float:right;
+}
