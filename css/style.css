@@ -1,0 +1,114 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+.main{
+    width: 100%;
+    height: 727px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+     
+}
+.sun{
+    width: 100px;
+    height:100px;
+    background-color: rgb(244, 192, 21);
+    border-radius: 50%;
+    box-shadow: 0 0 100px 10px rgb(244, 192, 21);  
+    
+    position: absolute;
+}
+
+.earth{
+    background-color: aqua;
+    width: 50px;
+    height: 50px;
+    border-radius:50% ;
+    position: relative;
+    
+    
+    box-shadow: 0 0 5px 2px rgb(19, 191, 191);
+    
+    animation: earth 5s  linear infinite ;
+    
+}
+.mars{
+    background-color: rgb(243, 10, 10);
+    width: 40px;
+    height: 40px;
+    border-radius:50% ;
+    box-shadow: 0 0 5px 2px rgb(243, 5, 5);
+    animation: mars 7s  linear infinite;
+
+}
+
+.mercury{
+    background-color: rgb(199, 78, 63);
+    width: 20px;
+    height: 20px;
+    border-radius:50% ;
+    box-shadow: 0 0 5px 2px rgb(231, 118, 57);
+    animation: mercury 2s  linear infinite;
+    
+
+}
+@keyframes mercury{
+    0% { 
+        transform: rotate(0deg)  
+              translateX(90px) rotate(0deg); 
+    } 
+
+    100% { 
+        transform: rotate(360deg)  
+              translateX(90px) rotate(360deg); 
+    } 
+
+}
+.venus{
+    background-color: rgb(9, 13, 36);
+    width: 40px;
+    height: 40px;
+    border-radius:50% ;
+    box-shadow: 0 0 5px 2px rgb(25, 37, 85);
+    animation: venus 3s  linear infinite;
+}
+@keyframes venus{
+    0% { 
+        transform: rotate(0deg)  
+              translateX(180px) rotate(0deg); 
+    } 
+
+    100% { 
+        transform: rotate(360deg)  
+              translateX(180px) rotate(360deg); 
+    } 
+
+}
+@keyframes mars{
+    0% { 
+        transform: rotate(0deg)  
+              translateX(340px) rotate(0deg); 
+    } 
+
+    100% { 
+        transform: rotate(360deg)  
+              translateX(340px) rotate(360deg); 
+    } 
+
+}
+@keyframes earth{
+    0% { 
+        transform: rotate(0deg)  
+              translateX(280px) rotate(0deg); 
+    } 
+
+    100% { 
+        transform: rotate(360deg)  
+              translateX(280px) rotate(360deg); 
+    } 
+
+}
+
+
