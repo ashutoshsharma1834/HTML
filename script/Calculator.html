@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        .main{
+            width: 500px;
+            height: 300px;
+            text-align: center;
+            margin:auto ;
+            margin-top: 50px;
+            background-color: rgb(10, 77, 77);
+            padding-top: 100px;
+        }
+        #first:hover{
+            background-color: beige;
+            
+        }
+        #second:hover{
+            background-color: beige;
+            
+        }
+        #ope:hover{
+            background-color: beige;
+        }
+        #calculate:hover{
+            background-color: blueviolet;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <h1>Basic Calculator</h1>
+        <br>
+    <input type="number" name="first" id="first" step="any">
+    <select id="ope">
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select>
+    <input type="number" name="second" id="second" step="any">
+    <br><br>
+    <button id="calculate" onclick="func()">Calculate</button>
+    <input type="text" name="" id="res" readonly="">
+    </div>
+</body>
+<script>
+function func(){
+    var opr1=document.getElementById("first").value;
+    var opr2=document.getElementById("second").value;
+    var ope=document.getElementById("ope").value;
+    
+    if(ope=='+'){
+        var res=parseInt(opr1) + parseInt(opr2);
+        
+        
+    }
+    if(ope=='-'){
+        var res=parseInt(opr1)-parseInt(opr2);
+       
+    }
+    if(ope=='*'){
+        var res=parseInt(opr1)*parseInt(opr2);
+        
+    }
+    if(ope=='/'){
+        var res=parseInt(opr1)/parseInt(opr2);
+        
+    }
+    document.getElementById("res").value=res;
+    
+   
+}
+
+</script>
+</html>
