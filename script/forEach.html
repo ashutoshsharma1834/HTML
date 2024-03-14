@@ -6,14 +6,19 @@
     <title>Document</title>
 </head>
 <body>
-    Name: <i id="name"></i>
-    <br>
-    <button onclick="call()">call</button>
+    
 </body>
 <script>
-    function call(){
-    var result=prompt("Enter Your Name","");
-    document.getElementById("name").innerHTML=result;
-    }
+var car=[1,2,3,4,5];
+car.forEach(myfun);
+function myfun(item,index,array){
+   
+    array[index]=item+5;
+    
+}
+function my(item,index){
+    document.write(index+" "+item+ "<br/>");
+}
+
 </script>
 </html>

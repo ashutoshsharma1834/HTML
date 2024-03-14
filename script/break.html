@@ -6,14 +6,16 @@
     <title>Document</title>
 </head>
 <body>
-    Name: <i id="name"></i>
-    <br>
-    <button onclick="call()">call</button>
+    
 </body>
 <script>
-    function call(){
-    var result=prompt("Enter Your Name","");
-    document.getElementById("name").innerHTML=result;
+    var c=0;
+       while(true){
+        c++;
+        if(c==5){
+            break;
+        }
+        document.write(c);
     }
 </script>
 </html>

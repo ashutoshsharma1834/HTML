@@ -6,14 +6,15 @@
     <title>Document</title>
 </head>
 <body>
-    Name: <i id="name"></i>
-    <br>
-    <button onclick="call()">call</button>
+    
 </body>
 <script>
-    function call(){
-    var result=prompt("Enter Your Name","");
-    document.getElementById("name").innerHTML=result;
+    for(var i=0;i<10;i++){
+        if(i==2){
+            continue;
+
+        }
+        document.write(i);
     }
 </script>
 </html>
