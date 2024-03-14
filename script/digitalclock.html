@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Clock</title>
+    <style>
+        h1{
+            color: rgb(219, 133, 28);
+            font-size: 100px;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+    </style>
+</head>
+<body onload="showTime()">
+    
+    <h1></h1>
+
+</body>
+<script type="text/javascript">
+function showTime(){
+    var d=new Date();
+    var h=d.getHours();
+    var m=d.getMinutes();
+    var s=d.getSeconds();
+    var sess="AM"
+    if(h>12){
+        h=h-12;
+    }
+    if(h>=12){
+        sess="PM";
+    }
+    h=h<10?"0"+h:h;
+    m=m<10?"0"+m:m;
+    s=s<10?"0"+s:s;
+    var time=h+" : "+m+" : "+s+" "+sess;
+    document.getElementsByTagName('h1')[0].innerText=time;
+    setTimeout(showTime,1000);
+}
+</script>
+</html>

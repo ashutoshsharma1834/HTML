@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="res"></h1>
+    <button onclick="getdate()">date</button>
+    <button onclick="getyear()">year</button>
+    <button onclick="getmonth()">month</button>
+    <button onclick="gethours()">hour</button>
+</body>
+<script>
+ var date=new Date();
+ function getdate(){
+ document.getElementById('res').innerText=date;
+ }
+ function getyear(){
+ document.getElementById("res").innerText=date.getFullYear();
+ }
+ function getmonth(){
+ document.getElementById("res").innerText=date.getMonth();
+ }
+ function gethours(){
+ document.getElementById("res").innerText=date.getHours();
+ }
+ </script>
+</html>
